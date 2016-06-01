@@ -2,7 +2,7 @@
   "name": "circulator",
   "version": "1.0.0",
   "description": "Infinite circular iterator that can be consumed from the current position by Array.from() or for-of",
-  "main": "lib/index.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },

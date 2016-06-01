@@ -1,7 +1,7 @@
 'use strict'
 
 const test = require('tape')
-const {Circulator} = require('./lib')
+const {Circulator} = require('./')
 
 test('init Base', function (t) {
   const b = new Circulator([1,2,3])
