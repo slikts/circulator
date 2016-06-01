@@ -1,7 +1,7 @@
 'use strict'
 
 const test = require('tape')
-const {Circulator} = require('../src')
+const {Circulator} = require('./lib')
 
 test('init Base', function (t) {
   const b = new Circulator([1,2,3])
@@ -22,5 +22,10 @@ test('cycle iterables', function (t) {
   const list = new Set([1,2,3])
   const b = new Circulator(list)
   t.deepEqual([b.next(),b.next(),b.next(),b.next(),b.next(),b.prev()], [1,2,3,1,2,1])
+  t.end()
+})
+
+test('empty params', function (t) {
+  t.ok(new Circulator())
   t.end()
 })

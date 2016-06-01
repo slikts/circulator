@@ -1,13 +1,13 @@
 {
   "name": "circulator",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
+  "description": "Infinite circular iterator that can be consumed from the current position by Array.from() or for-of",
+  "main": "lib/index.js",
   "directories": {
-    "test": "test"
+    "lib": "lib"
   },
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "tape test.js"
   },
   "repository": {
     "type": "git",
