@@ -1,3 +1,6 @@
 .gitignore
-test.js
+/test
 .eslintrc.json
+/src
+tsconfig.json
+index.ts

@@ -2,14 +2,16 @@
   "name": "circulator",
   "version": "1.1.0",
   "description": "Infinite circular iterator that can be consumed from the current position by Array.from() or for-of",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "jsnext:main": "dist/esm/index.js",
   "directories": {
     "lib": "src"
   },
   "scripts": {
     "test": "ts-node -P . --compilerOptions '{\"module\":\"commonjs\"}' test",
-    "prepublish": "npm run tsc",
-    "tsc": "tsc"
+    "prepublish": "npm run tsc.cjs; npm run tsc.esm",
+    "tsc.cjs": "tsc --module commonjs --outDir dist/cjs",
+    "tsc.esm": "tsc --module es2015 --outDir dist/esm"
   },
   "repository": {
     "type": "git",
@@ -35,5 +37,9 @@
     "@types/tape": "^4.2.29",
     "tape": "^4.5.1",
     "typescript": "^2.2.2"
+  },
+  "engineStrict": true,
+  "engines": {
+    "nodejs": ">= 4.x"
   }
 }
