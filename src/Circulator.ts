@@ -1,43 +1,42 @@
-'use strict'
+import Cycle from './Cycle'
 
-const cycle = require('./cycle')
+export default class Circulator<T> {
+  readonly size: number
+  readonly cycle: Cycle<T>
 
-class Circulator {
   /**
    * Wrap an iterable and allow cycling its elements infinitely
-   * @param  {Iterable} iterable Iterable to cycle
-   * @return {Circulator}
    */
-  constructor(iterable) {
-    const arr = iterable ? Array.from(iterable) : []
-    this.size = arr.length
-    this.cycle = cycle(arr)
+  constructor(iterable: Iterable<T>) {
+    const items = Array.isArray(iterable) ? iterable : Array.from(iterable)
+    this.size = items.length
+    this.cycle = new Cycle(items)
     // Init newborn generator
     this.cycle.next()
   }
+
   *[Symbol.iterator]() {
-    // Same as return arr[Symbol.iterator]()
     yield* Array.from(Array(this.size), (_, i) => this.step(+!!i))
     // Reset to start
     this.next()
   }
+
   /**
    * Step through the cycle
-   * @param  {number} n Number of steps
-   * @return {}
    */
-  step(n) {
+  step(n: number) {
     return this.cycle.next(n).value
   }
+
   current() {
     return this.step(0)
   }
+
   prev() {
     return this.step(-1)
   }
+  
   next() {
     return this.step(1)
   }
 }
-
-module.exports = {Circulator}

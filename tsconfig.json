@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "inlineSourceMap": true,
+    "target": "es2015",
+    "declaration": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "outDir": "dist",
+    "lib": [
+      "es2015",
+      "dom"
+    ]
+  },
+  "exclude": [
+    "dist",
+    "test",
+    "node_modules"
+  ]
+}
