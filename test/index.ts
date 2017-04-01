@@ -1,4 +1,4 @@
-import test from 'tape'
+import * as test from 'tape'
 import { Circulator } from '../'
 
 test('init Base', function (t: any) {
