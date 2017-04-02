@@ -1,6 +1,6 @@
 {
   "name": "circulator",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Infinite circular iterator that can be consumed from the current position by Array.from() or for-of",
   "main": "dist/cjs/index.js",
   "jsnext:main": "dist/esm/index.js",
@@ -36,6 +36,7 @@
   "devDependencies": {
     "@types/tape": "^4.2.29",
     "tape": "^4.5.1",
+    "ts-node": "^3.0.2",
     "typescript": "^2.2.2"
   },
   "engineStrict": true,
