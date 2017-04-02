@@ -10,6 +10,7 @@
     "strictNullChecks": true,
     "alwaysStrict": true,
     "outDir": "dist",
+    "declarationDir": "dist/types",
     "lib": [
       "es2015",
       "dom"

@@ -1,6 +1,6 @@
 /test
 /src
 .gitignore
+.travis.yml
 tsconfig.json
 index.ts
-.travis.yml
