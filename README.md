@@ -43,7 +43,7 @@ g.next().value // -> 1
 ## Notes
 
  * Includes TypeScript type definitions
- * Requires [ES2015 generator support][kagax-es6-generators] to run without Babel (Node.js >= 4.x)
+ * Requires [ES2015 generator support][kagax-es6-generators] to run without Babel (Node.js >= 5.x)
 
 [license-url]: LICENSE
 [license-image]: http://img.shields.io/npm/l/circulator.svg
