@@ -10,7 +10,7 @@ export default class Circulator<T> {
   constructor(iterable: Iterable<T>) {
     const items = Array.isArray(iterable) ? iterable : Array.from(iterable)
     this.size = items.length
-    this.cycle = new Cycle(items)
+    this.cycle = Cycle(items)
     // Init newborn generator
     this.cycle.next()
   }
