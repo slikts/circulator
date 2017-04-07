@@ -36,7 +36,7 @@ c.cycle // The generator used for cycling
 The basic generator object can be used separately:
 ```js
 const { Cycle } = require('circulator')
-const g = new Cycle([1, 2, 3])
+const g = Cycle([1, 2, 3])
 g.next().value // -> 1
 ```
 
