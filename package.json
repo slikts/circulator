@@ -15,7 +15,7 @@
     "prepublish": "npm run build",
     "tsc.cjs": "tsc --module commonjs --outDir dist/cjs",
     "tsc.esm": "tsc --module es2015 --outDir dist/esm",
-    "tsc.es5": "tsc --module es2015 --target es5 --downlevelIteration --outDir dist/es5"
+    "tsc.es5": "tsc --module commonjs --target es5 --downlevelIteration --outDir dist/es5"
   },
   "repository": {
     "type": "git",

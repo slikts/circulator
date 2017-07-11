@@ -1,3 +1,4 @@
+"use strict";
 var __generator = (this && this.__generator) || function (thisArg, body) {
     var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
     return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
@@ -25,6 +26,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * A generator for cycling an array in both directions
  */
@@ -47,5 +49,5 @@ var Cycle = function (items) {
         }
     });
 };
-export default Cycle;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ3ljbGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvQ3ljbGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7O0dBRUc7QUFDSCxJQUFNLEtBQUssR0FBRyxVQUFjLEtBQVU7Ozs7O2dCQUM5QixHQUFHLEdBQUcsS0FBSyxDQUFDLE1BQU0sQ0FBQTtnQkFDcEIsQ0FBQyxHQUFHLENBQUMsQ0FBQTs7O3FCQUNGLElBQUk7Z0JBQ0osS0FBQSxHQUFHLEdBQUcsQ0FBQyxDQUFBO2dCQUFJLHFCQUFNLEtBQUssQ0FBQyxDQUFDLENBQUMsRUFBQTs7Z0JBQTlCLENBQUMsR0FBRyxDQUFDLEtBQVUsQ0FBQyxTQUFjLENBQUMsQ0FBQyxHQUFHLEdBQUcsQ0FBQTs7Ozs7Q0FFekMsQ0FBQTtBQUlELGVBQWUsS0FBSyxDQUFBIn0=
+exports.default = Cycle;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ3ljbGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvQ3ljbGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTs7R0FFRztBQUNILElBQU0sS0FBSyxHQUFHLFVBQWMsS0FBVTs7Ozs7Z0JBQzlCLEdBQUcsR0FBRyxLQUFLLENBQUMsTUFBTSxDQUFBO2dCQUNwQixDQUFDLEdBQUcsQ0FBQyxDQUFBOzs7cUJBQ0YsSUFBSTtnQkFDSixLQUFBLEdBQUcsR0FBRyxDQUFDLENBQUE7Z0JBQUkscUJBQU0sS0FBSyxDQUFDLENBQUMsQ0FBQyxFQUFBOztnQkFBOUIsQ0FBQyxHQUFHLENBQUMsS0FBVSxDQUFDLFNBQWMsQ0FBQyxDQUFDLEdBQUcsR0FBRyxDQUFBOzs7OztDQUV6QyxDQUFBO0FBSUQsa0JBQWUsS0FBSyxDQUFBIn0=
