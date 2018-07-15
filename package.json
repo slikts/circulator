@@ -40,7 +40,7 @@
     "@types/tape": "^4.2.29",
     "cz-conventional-changelog": "^2.1.0",
     "tape": "^4.5.1",
-    "ts-node": "^3.0.2",
+    "ts-node": "^7.0.0",
     "typescript": "^2.6.2"
   },
   "engineStrict": true,
