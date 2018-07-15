@@ -5,6 +5,8 @@
 
 # Circulator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/slikts/circulator.svg)](https://greenkeeper.io/)
+
 Circular iteration for a list of values; step forward or backward with a simple API. Lightweight, ES2015 generator-based implementation.
 
 ## Installation
