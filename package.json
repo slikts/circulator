@@ -9,9 +9,9 @@
     "lib": "src"
   },
   "scripts": {
-    "test": "ts-node -P . --compilerOptions '{\"module\":\"commonjs\"}' test",
+    "test": "ts-node -P ./tsconfig.json --compilerOptions '{\"module\":\"commonjs\"}' test",
     "validate": "tsc --noEmit",
-    "build": "rm -rf dist; npm run tsc.cjs && npm run tsc.esm",
+    "build": "rimraf dist; npm run tsc.cjs && npm run tsc.esm",
     "prepublish": "npm run build",
     "tsc.cjs": "tsc --module commonjs --outDir dist/cjs",
     "tsc.esm": "tsc --module es2015 --outDir dist/esm"
@@ -37,11 +37,12 @@
   },
   "homepage": "https://github.com/slikts/circulator#readme",
   "devDependencies": {
-    "@types/tape": "^4.2.29",
+    "@types/tape": "^4.2.32",
     "cz-conventional-changelog": "^2.1.0",
-    "tape": "^4.5.1",
-    "ts-node": "^3.0.2",
-    "typescript": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "tape": "^4.9.1",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
   },
   "engineStrict": true,
   "engines": {
