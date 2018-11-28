@@ -5,7 +5,7 @@ const Cycle = function* <T>(items: T[]): Cycle<T> {
   const len = items.length
   let i = 0
   while (true) {
-    i = (len + i + (yield items[i])) % len
+    i = (len + i + ((yield items[i]) || 1)) % len
   }
 }
 
